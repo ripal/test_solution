@@ -1,0 +1,116 @@
+
+/**
+ * to remove google chrome autofill default yellow theme.
+ */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-box-shadow: 0 0 0px 1000px #fff inset;
+}
+:-moz-ui-invalid:not(output) {
+  box-shadow: none;
+}
+
+body{
+  letter-spacing: @letter_spacing !important;
+}
+
+div{
+  letter-spacing: @letter_spacing !important;
+}
+
+button{
+letter-spacing: @letter_spacing !important;
+  outline: none;
+}
+
+buttton,i,u,a{
+  &:extend(.crsor_pointer);
+}
+
+a {
+    color: @backgroundPrimary;
+    text-decoration: none;
+}
+
+input {
+    display: block;
+	color: @primary;
+    &:extend(.pg_bg_color);
+	box-sizing: border-box;
+    border: none;
+    width:@ninty_percent;
+}
+
+input:focus {
+    outline: 0;
+}
+
+table {
+    width: 100%;
+    table-layout: fixed;
+    border-spacing: @px_0;
+}
+.layout_container{
+    &:extend(.full_size);
+    overflow-x: auto;
+    position: absolute;
+}
+
+.layout_inner_container{
+    &:extend(.full_size);
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: relative;
+}
+.layout_content{
+    -ms-flex: 0 1 auto;
+    display: inline-block;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    position: relative;
+    -webkit-overflow-scrolling: touch;
+    background-color: @background500;
+}
+
+// .input_row {
+//     @extend %row;
+//     padding-left: @px_16;
+// }
+
+// .input_row_dailog {
+//     @extend %row;
+//     padding-left: @px_24;
+// }
+
+// #tabs {
+//     @extend %row;
+//     border-bottom: none;
+//     border-top-left-radius: 2px;
+//     border-top-right-radius: 2px;
+// }
+
+//--- from here modification is remaining ---//
+
+// .header_navigation_item {
+//     @extend %text_decoration_none;
+//     color: @white !important;
+//     margin: 0 @px_16;
+// }
+
+// .header_title {
+//     @extend %font_size_36_px;
+//     @extend %text_decoration_none;
+//     &:extend(.color_white)
+// }

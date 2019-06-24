@@ -1,0 +1,356 @@
+
+@font-face {
+    font-family: SFUIText-Regular;
+	src: ~"url('./themes/fonts/SF-UI-Display-Regular.woff') format('woff'), url('./themes/fonts/SF-UI-Display-Regular.otf')";
+}
+
+@font-family: 'SFUIText-Regular', 'sans-serif';
+
+body{
+  font-family: @font-family;
+}
+/* @import url("https://use.typekit.net/omm1shk.css"); */
+
+* {
+	// line-height: 1.4;
+	//font-family: "acumin-pro",sans-serif !important;
+}
+
+@font_size_display4: 3.75em; //60px
+@font_size_display3: 3em;    //48px
+@font_size_display2: 2.25em; //36px
+@font_size_display1: 1.5em;  //24px
+@font_size_subheader: 0.88em;  //14px
+@font_size_headline: 1.31em; //21px
+@font_size_name: 1.25em; //20px
+@font_size_subheadline: 1.12em;//18px
+@font_size_body: 1em;        //16px
+@font_size_caption: 0.75em;  //12px
+@font_size_button: 0.88em;   //14px
+@font_size_hint: 0.625em;   //10px
+@font_size_header:2em; //32px;
+
+@font_weight_extralight: 200;
+@font_weight_light: 300;
+@font_weight_regular: 400;
+@font_weight_medium: 500;
+@font_weight_semibold: 600;
+@font_weight_bold: 700;
+@font_weight_black: 800;
+@font_weight_extra_bold: 900;
+
+// Title & Subtitles for screen headers and screen titles
+.title {
+	font-size: @font_size_display1;
+	font-weight: @font_weight_regular;
+	color: @text500;
+}
+
+.trend_title_font {
+	font-size: @font_size_name;
+	font-weight: @font_weight_bold;
+	color: @clr_6A6F82;
+	margin:16px 0px;
+}
+//Header and sub-headers for Card / Paper headers and sub headers
+.header {
+	font-size: @font_size_headline !important;
+	font-weight: @font_weight_semibold !important;
+	color:@text700 !important;
+}
+
+.header_regular {
+	font-size: @font_size_headline !important;
+	font-weight: @font_weight_regular !important;
+	color:@text700 !important;
+}
+
+.subheadeline_semibold {
+	font-size: @font_size_subheadline;
+	font-weight: @font_weight_semibold;
+	color:@text500;
+}
+
+// Use for normal 16px body font
+.body_font {
+	font-size: @font_size_body;
+	font-weight: @font_weight_regular;
+	color:@text500;
+	margin: @contentPadding 0;
+}
+
+.body_font_semibold {
+	font-size: @font_size_body;
+	font-weight: @font_weight_semibold;
+	color:@text700;
+	margin: @contentPadding 0;
+}
+
+.body_font_no_margin {
+	&:extend(.body_font);
+	margin: 0;
+}
+
+// Use for smaller sized body font or paragraph e.g. non-academic descriptions
+.body_font_caption {
+	font-size: @font_size_button;
+	font-weight: @font_weight_light;
+	color:@text500;	
+	margin: @contentPadding 0;
+}
+
+
+.captions {
+	font-size: @font_size_caption !important;
+	font-weight: @font_weight_regular;
+	color: @text500;
+}
+
+
+// Use for all hyperlinks
+.links {
+	color: @links;
+}
+
+.chips>span {
+	// font-size:@font_size_button !important;
+	// font-weight: @font_weight_semibold !important;
+	// color: @white !important;
+}
+
+.button_fonts{
+	font-size: @font_size_button !important;
+	font-weight: @font_weight_regular !important;
+	color:@text500 !important;
+}
+.graph_label_fonts{
+	font-size: @font_size_button !important;
+	font-weight: @font_weight_regular !important;
+	color:@clr_E8EAF6 !important;
+}
+
+.usr_typ{
+	font-size:@font_size_button !important;
+	font-weight: @font_weight_semibold !important;
+	color: @primary !important;
+}
+
+.font(@fontsize, @fontweight, @fontcolor) {
+	font-size: @fontsize ;
+	font-weight: @fontweight ;
+	color: @fontcolor ;
+}
+
+.font_force_update(@fontsize, @fontweight, @fontcolor) {
+	font-size: @fontsize !important;
+	font-weight: @fontweight !important;
+	color: @fontcolor !important;
+}
+
+.accent_green_primary_text_heade_line_1 {
+	.font(@font_size_headline, @font_weight_medium, @accentGreenPrimary);
+}
+.accent_accent_med_turquoisone_text_heade_line_1 {
+	.font(@font_size_headline, @font_weight_medium, @accentMediumTurquoiseOne);
+}
+.accent_tertiary_topaz_700_primary_text_heade_line_1 {
+	.font(@font_size_headline, @font_weight_medium, @tertiaryTopaz700);
+}
+.accent_tertiary_topaz_700_caption {
+	.font(@font_size_caption, @font_weight_regular, @tertiaryTopaz700);
+}
+.primary_text_heade_line_1 {
+	.font(@font_size_headline, @font_weight_regular, @textPrimary);
+}
+
+.primary_text_caption {
+	.font(@font_size_caption, @font_weight_regular, @textPrimary);
+}
+.primary_text_caption_medium {
+	.font(@font_size_caption, @font_weight_medium, @textPrimary);
+}
+.primary_text_caption_bold {
+	.font(@font_size_caption, @font_weight_bold, @textPrimary);
+}
+.text_500_caption_semibold {
+	.font(@font_size_caption, @font_weight_semibold, @text500);
+}
+.text_400_caption {
+	.font(@font_size_caption, @font_weight_regular, @text400);
+}
+.white_text_caption_semibold {
+	.font(@font_size_caption, @font_weight_semibold, @backgroundPrimary);
+}
+.white_text_caption_medium {
+	.font(@font_size_caption, @font_weight_medium, @backgroundPrimary);
+}
+.white_text_caption_medium_imp_mark {
+	.font_force_update(@font_size_caption, @font_weight_medium, @backgroundPrimary);
+}
+.white_text_caption {
+	.font(@font_size_caption, @font_weight_regular, @backgroundPrimary);
+}
+.white_text_caption_bold {
+	.font(@font_size_caption, @font_weight_bold, @backgroundPrimary);
+}
+
+.accent_green_primary_caption_bold {
+	.font(@font_size_caption, @font_weight_bold, @accentGreenPrimary);
+}
+
+.primary_text_hint {
+	.font(@font_size_hint, @font_weight_regular, @textPrimary);
+}
+
+.primary_text_hint_imp_mrk {
+	.font_force_update(@font_size_hint, @font_weight_regular, @textPrimary);
+}
+
+.text_500_hint {
+	.font(@font_size_hint, @font_weight_regular, @text500);
+}
+.text_500_hint_medium {
+	.font(@font_size_hint, @font_weight_medium, @text500);
+}
+.text_white_hint_light {
+	.font(@font_size_hint, @font_weight_light, @backgroundPrimary);
+}
+.white_text_hint_bold {
+	.font(@font_size_hint, @font_weight_bold, @backgroundPrimary);
+}
+.white_text_hint {
+	.font(@font_size_hint, @font_weight_regular, @backgroundPrimary);
+}
+.text_accent_red_primary_hint {
+	.font(@font_size_hint, @font_weight_regular, @accentRedPrimary);
+}
+
+.primary_text_button {
+	.font(@font_size_button, @font_weight_regular, @textPrimary);
+}
+.primary_text_button_medium {
+	.font(@font_size_button, @font_weight_medium, @textPrimary);
+}
+.primary_text_button_imp_mrk {
+	.font_force_update(@font_size_button, @font_weight_regular, @textPrimary);
+}
+
+.primary_text_button_semibold {
+	.font(@font_size_button, @font_weight_semibold, @textPrimary);
+}
+.primary_text_button_bold {
+	.font(@font_size_button, @font_weight_bold, @textPrimary);
+	&::-webkit-input-placeholder {
+		.font(@font_size_button, @font_weight_regular, @textPrimary); 
+	}
+}
+.white_text_button {
+	.font(@font_size_button, @font_weight_regular, @backgroundPrimary);
+}
+.white_text_button_bold {
+	.font(@font_size_button, @font_weight_bold, @backgroundPrimary);
+	&::-webkit-input-placeholder {
+		.font(@font_size_button, @font_weight_regular, @backgroundPrimary); 
+	}
+}
+.white_text_button_imp_mrk {
+	.font_force_update(@font_size_button, @font_weight_regular, @backgroundPrimary);
+}
+
+.primary_text_body {
+	.font(@font_size_body, @font_weight_regular, @textPrimary);
+}
+.primary_text_body_light {
+	.font(@font_size_body, @font_weight_light, @textPrimary);
+}
+.primary_text_body_bold {
+	.font(@font_size_body, @font_weight_bold, @textPrimary);
+}
+.primary_text_body_semi_bold {
+	.font(@font_size_body, @font_weight_semibold, @textPrimary);
+}
+
+.white_text_body {
+	.font(@font_size_body, @font_weight_regular, @white);
+}
+.white_text_body_light {
+	.font(@font_size_body, @font_weight_light, @white);
+}
+.white_text_body_medium {
+	.font(@font_size_body, @font_weight_medium, @white);
+}
+.white_text_body_semibold {
+	.font(@font_size_body, @font_weight_semibold, @white);
+}
+.white_text_body_bold {
+	.font(@font_size_body, @font_weight_bold, @white);
+}
+.white_text_title_bold {
+	.font(@font_size_body, @font_weight_bold, @white);
+}
+
+.text_500_body_semi_bold {
+	.font(@font_size_body, @font_weight_semibold, @text500);
+}
+
+.primary_text_body_medium {
+	.font(@font_size_body, @font_weight_medium, @textPrimary);
+}
+.primary_text_body_semibold {
+	.font(@font_size_body, @font_weight_semibold, @textPrimary);
+}
+
+.primary_text_body_semibold_imp_mark {
+	.font_force_update(@font_size_body, @font_weight_semibold, @textPrimary);
+}
+
+.primary_text_body_semibold_placeholder {
+	.font(@font_size_body, @font_weight_semibold, @textPrimaryAlpha70);
+}
+.primary_text_body_semibold_placeholder_imp_mark {
+	.font_force_update(@font_size_body, @font_weight_semibold, @textPrimaryAlpha70);
+}
+
+.white_text_name_semibold {
+	.font(@font_size_name, @font_weight_semibold, @white);
+}
+.white_text_name_medium {
+	.font(@font_size_name, @font_weight_medium, @white);
+}
+.white_text_name_light {
+	.font(@font_size_name, @font_weight_light, @white);
+}
+.primary_text_name {
+	.font(@font_size_name, @font_weight_regular, @textPrimary);
+}
+.primary_text_name_semibold {
+	.font(@font_size_name, @font_weight_bold, @textPrimary);
+}
+.primary_text_name_light {
+	.font(@font_size_name, @font_weight_light, @textPrimary);
+}
+.accent_red_name {
+	.font(@font_size_name, @font_weight_regular, @accentRedPrimary);
+}
+.accent_red_body {
+	.font(@font_size_body, @font_weight_regular, @accentRedPrimary);
+}
+.white_text_subheadline_bold {
+	.font(@font_size_name, @font_weight_bold, @white);
+}
+.primary_text_subheadline_bold {
+	.font(@font_size_display1, @font_weight_bold, @textPrimary);
+}
+.primary_caption_semibold {
+	.font(@font_size_caption, @font_weight_semibold, @primary);
+}
+.primary_caption_bold {
+	.font(@font_size_caption, @font_weight_bold, @primary);
+}
+.white_label_regular {
+	.font(@font_size_button, @font_weight_regular, white);
+}
+
+.text500_caption_regular {
+	.font(@font_size_caption, @font_weight_regular, @text700);
+}

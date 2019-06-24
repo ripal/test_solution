@@ -1,0 +1,34 @@
+@fullwidth: 100%;
+@fullheight: 100%;
+@contentPadding: 16px;
+@contentMargin: 24px;
+@componentMargin: 16px;
+@cellSize: 8px;
+@spacing32: 32px;
+@maxViewportWidth: 1366px;
+@header: 3.75em;
+
+//--- import all theme files ---//
+@import './themes/_colors.less';
+@import './themes/fonts/_fonts.less';
+
+
+//--- import all modules ---//
+@import './modules/_variables.less';
+@import './modules/_commoncomps.less';
+
+html, body, p, h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+a {
+	color: @primary;
+}
+
+.comp_padding {
+	padding:@contentPadding;
+} 

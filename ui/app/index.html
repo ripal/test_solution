@@ -1,0 +1,58 @@
+<!-- 
+    This is the html file for development. There is separate file for production.
+    So any changes you do in this file for development purpose won't reflect to the production version.
+    For that you have to make changes in the production template as well.
+    That is located at /app/assets/index.ejs
+ -->
+
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta property="og:title" content="Test">
+    <title>Test.</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="http://localhost:8000/main.css">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet"> -->
+
+</head>
+
+<body>
+    <!-- <script type='text/javascript' src='https://api.stackexchange.com/js/2.0/all.js'></script>
+    <script type='text/javascript'>
+        SE.init({
+            clientId: 1,
+            key: 'U4DMV*8nvpm3EOpvf69Rxw((',
+            channelUrl: 'http://localhost:8000/home',
+            complete: function (data) { }
+        });
+    </script>
+    <script type='text/javascript'>
+        SE.authenticate({
+            success: function (data) { console.log("success...", data) },
+            error: function (data) { console.log("error...", data) },
+            networkUsers: true
+        });
+    </script> -->
+
+
+    <div id="app">
+        <script src="http://localhost:8000/bundle.js"></script>
+    </div>
+
+    <script>
+        window.ga = function () {
+            ga.q.push(arguments)
+        };
+        ga.q = [];
+        ga.l = +new Date;
+        ga('create', 'UA-XXXXX-Y', 'auto');
+        ga('send', 'pageview')
+    </script>
+</body>
+
+</html>
