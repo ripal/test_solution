@@ -86,7 +86,7 @@
     "wdio-mocha-framework": "^0.6.3",
     "webdriverio": "^4.13.2",
     "webpack": "4.11.1",
-    "webpack-bundle-analyzer": "2.13.1",
+    "webpack-bundle-analyzer": "3.3.2",
     "webpack-cli": "3.0.2",
     "webpack-dev-server": "^3.2.1"
   }
